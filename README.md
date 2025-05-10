@@ -8,8 +8,6 @@ A fun and interactive drawing grid built using HTML, CSS, and JavaScript—part 
 - 🎨 Hover over squares to color them like a sketchpad
 - 🌈 Color picker to choose your drawing color
 - 🔁 New Grid button to change the grid size (up to 100x100)
-- 💥 Clear All button to reset the grid
-- 🎉 Funky fonts and a colorful background for a fun visual experience
 
 ## 🚀 How It Works
 
@@ -19,7 +17,6 @@ A fun and interactive drawing grid built using HTML, CSS, and JavaScript—part 
 - Users can:
   - Change grid size
   - Pick their own color
-  - Clear the entire grid
 
 ## 🧪 How to Run
 

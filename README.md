@@ -40,7 +40,8 @@ A fun and interactive drawing grid built using HTML, CSS, and JavaScript—part 
 
 ## 🖼️ Screenshot
 
-> *(Add a screenshot of your project here if you'd like)*
+> ![Screenshot 2025-05-10 154652](https://github.com/user-attachments/assets/ce469235-bef8-4caf-b4f4-d660e1e6e0a8)
+
 
 ## 📁 Project Structure
 ```

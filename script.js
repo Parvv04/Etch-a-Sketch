@@ -7,7 +7,7 @@ let useRandomColor = true;
 
 toggleColorBtn.addEventListener('click', () => {
   useRandomColor = !useRandomColor;
-  toggleColorBtn.textContent = useRandomColor ? "🌈 Use Random Color" : "🎨 Use Selected Color";
+  toggleColorBtn.textContent = useRandomColor ? "🎨 Use Selected Color" : "🌈 Use Random Color";
 });
 
 function createGrid(size) {
@@ -46,6 +46,7 @@ function createGrid(size) {
   }
 }
 
+  
 function setGridSize() {
   let size = parseInt(prompt("Enter number of squares per side (max 100):"));
   if (isNaN(size) || size < 1 || size > 100) {

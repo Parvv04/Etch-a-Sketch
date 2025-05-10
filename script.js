@@ -1,8 +1,17 @@
 const container = document.getElementById('container');
 const resizeBtn = document.getElementById('resizeBtn');
+const colorPicker = document.getElementById('colorPicker');
+const toggleColorBtn = document.getElementById('toggleColorBtn');
+
+let useRandomColor = true;
+
+toggleColorBtn.addEventListener('click', () => {
+  useRandomColor = !useRandomColor;
+  toggleColorBtn.textContent = useRandomColor ? "🌈 Use Random Color" : "🎨 Use Selected Color";
+});
 
 function createGrid(size) {
-  container.innerHTML = ''; // Clear existing grid
+  container.innerHTML = '';
   const squareSize = 960 / size;
 
   for (let i = 0; i < size * size; i++) {
@@ -10,7 +19,7 @@ function createGrid(size) {
     square.classList.add('square');
     square.style.width = `${squareSize}px`;
     square.style.height = `${squareSize}px`;
-    square.dataset.opacity = 0; // for darkening
+    square.dataset.opacity = 0;
 
     square.addEventListener('mouseover', () => {
       let currentOpacity = parseFloat(square.dataset.opacity);
@@ -19,12 +28,17 @@ function createGrid(size) {
         square.dataset.opacity = currentOpacity;
       }
 
-      // Generate random RGB values
-      const r = Math.floor(Math.random() * 256);
-      const g = Math.floor(Math.random() * 256);
-      const b = Math.floor(Math.random() * 256);
+      let color;
+      if (useRandomColor) {
+        const r = Math.floor(Math.random() * 256);
+        const g = Math.floor(Math.random() * 256);
+        const b = Math.floor(Math.random() * 256);
+        color = `rgb(${r}, ${g}, ${b})`;
+      } else {
+        color = colorPicker.value;
+      }
 
-      square.style.backgroundColor = `rgb(${r}, ${g}, ${b})`;
+      square.style.backgroundColor = color;
       square.style.opacity = currentOpacity;
     });
 
@@ -35,13 +49,11 @@ function createGrid(size) {
 function setGridSize() {
   let size = parseInt(prompt("Enter number of squares per side (max 100):"));
   if (isNaN(size) || size < 1 || size > 100) {
-    alert("Invalid input. Please enter a number between 1 and 100.");
+    alert("Please enter a valid number between 1 and 100.");
     return;
   }
   createGrid(size);
 }
 
 resizeBtn.addEventListener('click', setGridSize);
-
-// Initial default grid
 createGrid(16);

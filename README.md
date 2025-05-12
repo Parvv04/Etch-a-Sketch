@@ -66,8 +66,8 @@ Control	          Description
 ---
 📬 Author
 
-Created by Parvv04
- Feel free to star ⭐ the repo, fork it, or suggest improvements!
+Created by Parvv04   
+Feel free to star ⭐ the repo, fork it, or suggest improvements!
 
 ---
 🌟 Show Some Love

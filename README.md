@@ -49,6 +49,7 @@ Control	          Description
 ---
 🖼️ Demo Preview
 ![Screenshot 2025-05-10 154652](https://github.com/user-attachments/assets/3df1ac64-2676-4d03-9f77-1f55c0caf757)
+
 ---
 🛠️ Tech Stack
 - HTML5
@@ -66,7 +67,7 @@ Control	          Description
 📬 Author
 
 Created by Parvv04
-Feel free to star ⭐ the repo, fork it, or suggest improvements!
+ Feel free to star ⭐ the repo, fork it, or suggest improvements!
 
 ---
 🌟 Show Some Love

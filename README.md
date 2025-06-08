@@ -18,19 +18,10 @@ This interactive drawing grid lets you paint by hovering, choose between solid o
 
 ## 🚀 Getting Started
 
-### 📁 Clone the Repository
+- Clone the Repository
+- Run Locally
+- Simply open the `index.html` file in your browser:
 
-```bash
-git clone https://github.com/yourusername/etch-a-sketch.git
-cd etch-a-sketch
-```
-## ▶️ Run Locally
-Simply open the index.html file in your browser:
-
-```bash
-start index.html    # Windows
-open index.html     # macOS
-```
 ---
 
 ## 📦 File Structure
@@ -43,7 +34,6 @@ etch-a-sketch/
 ```
 ---
 ## 🎮 How to Use
-Control	          Description
 - 🔲 Set Grid Size	Prompts for grid size (max 100×100)
 - 🎨 Use Selected Color	Draw with your chosen color
 - 🌈 Use Random Color	Toggle to draw with random colors
